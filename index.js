@@ -5,11 +5,12 @@ import pg from "pg";
 const app = express();
 const port = 3000;
 
+// ### IMPORTANT ### Change credentials below this comment to connect to postgres server on your own PC!
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "gur192001",
+  password: "123456",
   port: 5432,
 });
 db.connect();
